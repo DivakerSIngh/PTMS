@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rfi.component.css']
 })
 export class RfiComponent implements OnInit {
-  customOptions: any = {
+  customOptionsRFI: any = {
     loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: false,
+    dots: true,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['prev', 'next'],
     responsive: {
       0: {
         items: 1

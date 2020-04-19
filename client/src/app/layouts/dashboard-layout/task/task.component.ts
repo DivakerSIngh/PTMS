@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskComponent implements OnInit {
   customOptions: any = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: false,
+    dots: true,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['prev', 'next'],
     responsive: {
       0: {
         items: 1

@@ -34,11 +34,8 @@
       </div>
       <div class="clear"></div>
       <div class="module-content-inside">
-
-        <!-- <div id="module-carousel" class="owl-carousel owl-theme"> -->
-          <!-- item -->
-
-          <owl-carousel-o [options]="customOptions">
+        <div id="module-carousel" class="owl-carousel owl-theme owl-loaded owl-drag">
+        <owl-carousel-o [options]="customOptionsRFI">
             <ng-template carouselSlide>
                 <div class="item">
                     <!-- Project Tab Content  -->
@@ -115,216 +112,368 @@
                   </div>
             </ng-template>
             <ng-template carouselSlide>
-          <div class="item">
-            <!-- Project Tab Content  -->
-            <div class="module-content-wrapper moduletask">
-              <!-- module-content-header -->
-              <div class="module-content-header bg-header_1">
-                <a href="javascript:void(0);" class="bullet"><span></span></a>
-                <ul class="dropdwn-task">     
-                    <li><a href="javascript:void(0);">Attach Files</a></li>
-                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
-                    <li><a href="javascript:void(0);">Send to Email</a></li>
-                    <li><a href="javascript:void(0);">Print PDF</a></li>
-                    <li><a href="javascript:void(0);">Share Task</a></li>
-                    <li><a href="javascript:void(0);">View / Edit Details</a></li>
-                    <li><a href="javascript:void(0);">Delete</a></li>
-                </ul>
-                <ul class="dropdwn-task">     
-                    <li><a href="javascript:void(0);">Attach Files</a></li>
-                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
-                    <li><a href="javascript:void(0);">Send to Email</a></li>
-                    <li><a href="javascript:void(0);">Print PDF</a></li>
-                    <li><a href="javascript:void(0);">Share Task</a></li>
-                    <li><a href="javascript:void(0);">View / Edit Details</a></li>
-                    <li><a href="javascript:void(0);">Delete</a></li>
-                </ul>
-
-                <img src="../../../../assets/images/notes-pin.png">
-              </div>
-              <!-- module-content-header -->
-              <!-- module-content-body -->
-              <div class="module-content-body bg-gradient_1">
-                <ul>
-                  <li>
-                    <div class="md-status-info">
-                      <div class="md-info-img">
-                        <img src="../../../../assets/images/notes-img.png">
+                <div class="item">
+                    <!-- Project Tab Content  -->
+                    <div class="module-content-wrapper moduletask">
+                      <!-- module-content-header -->
+                      <div class="module-content-header bg-header_2">
+                        <a href="javascript:void(0);" class="bullet"><span></span></a>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+                        <img src="../../../../assets/images/notes-pin.png">
                       </div>
-                      <h5>Appinventiv Pramod</h5>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="status status-bar-with-active">
-                      <span class="bar-line">
-                        <label class="pull-right">60%</label>
-                        <div class="progress active m-xxxs">
-                          <div class="bar" style="width: 50%;"></div>                                                   
-                        </div>
-                      </span>
-                      <span class="bar-status"> 
-                        <p>| Status : Active</p>
-                      </span>
-                    </div>
-                  </li>
-                  <li><p>Project Name: <span>Test Project 100</span></p></li>
-                  <li><p>ODB Project Number: <span>1006</span></p></li>
-                  <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
-                  <li><p>Reason for Request: <span>Insufficient</span></p></li>
-                  <li><p>To: <span>Appinventiv Pramod</span></p></li>
-                  <li><p>Status: <span>On Going</span></p></li>
-                  <li><p>Due Date : <span>2017-06-15</span></p></li>
-                  <li>
-                    <p>Watching Users:</p>
-                    <div class="p-t-xs module-watching-user">
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- module-content-body -->
-            </div>
-            <!-- //Project Tab Content  -->
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="item">
-            <!-- Project Tab Content  -->
-            <div class="module-content-wrapper moduletask">
-              <!-- module-content-header -->
-              <div class="module-content-header bg-header_2">
-                <a href="javascript:void(0);" class="bullet"><span></span></a>
-                <ul class="dropdwn-task">     
-                    <li><a href="javascript:void(0);">Attach Files</a></li>
-                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
-                    <li><a href="javascript:void(0);">Send to Email</a></li>
-                    <li><a href="javascript:void(0);">Print PDF</a></li>
-                    <li><a href="javascript:void(0);">Share Task</a></li>
-                    <li><a href="javascript:void(0);">View / Edit Details</a></li>
-                    <li><a href="javascript:void(0);">Delete</a></li>
-                </ul>
-                <img src="../../../../assets/images/notes-pin.png">
-              </div>
-              <!-- module-content-header -->
-              <!-- module-content-body -->
-              <div class="module-content-body bg-gradient_2">
-                <ul>
-                  <li>
-                    <div class="md-status-info">
-                      <div class="md-info-img">
-                        <img src="../../../../assets/images/notes-img.png">
+                      <!-- module-content-header -->
+                      <!-- module-content-body -->
+                      <div class="module-content-body bg-gradient_2">
+                        <ul>
+                          <li>
+                            <div class="md-status-info">
+                              <div class="md-info-img">
+                                <img src="../../../../assets/images/notes-img.png">
+                              </div>
+                              <h5>Appinventiv Pramod</h5>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="status status-bar-with-active">
+                              <span class="bar-line">
+                                <label class="pull-right">60%</label>
+                                <div class="progress active m-xxxs">
+                                  <div class="bar" style="width: 50%;"></div>                                                   
+                                </div>
+                              </span>
+                              <span class="bar-status"> 
+                                <p>| Status : Active</p>
+                              </span>
+                            </div>
+                          </li>
+                          <li><p>Project Name: <span>Test Project 100</span></p></li>
+                          <li><p>ODB Project Number: <span>1006</span></p></li>
+                          <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
+                          <li><p>Reason for Request: <span>Insufficient</span></p></li>
+                          <li><p>To: <span>Appinventiv Pramod</span></p></li>
+                          <li><p>Status: <span>On Going</span></p></li>
+                          <li><p>Due Date : <span>2017-06-15</span></p></li>
+                          <li>
+                            <p>Watching Users:</p>
+                            <div class="p-t-xs module-watching-user">
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                      <h5>Appinventiv Pramod</h5>
+                      <!-- module-content-body -->
                     </div>
-                    <div class="clear"></div>
-                    <div class="status status-bar-with-active">
-                      <span class="bar-line">
-                        <label class="pull-right">60%</label>
-                        <div class="progress active m-xxxs">
-                          <div class="bar" style="width: 50%;"></div>                                                   
-                        </div>
-                      </span>
-                      <span class="bar-status"> 
-                        <p>| Status : Active</p>
-                      </span>
-                    </div>
-                  </li>
-                  <li><p>Project Name: <span>Test Project 100</span></p></li>
-                  <li><p>ODB Project Number: <span>1006</span></p></li>
-                  <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
-                  <li><p>Reason for Request: <span>Insufficient</span></p></li>
-                  <li><p>To: <span>Appinventiv Pramod</span></p></li>
-                  <li><p>Status: <span>On Going</span></p></li>
-                  <li><p>Due Date : <span>2017-06-15</span></p></li>
-                  <li>
-                    <p>Watching Users:</p>
-                    <div class="p-t-xs module-watching-user">
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- module-content-body -->
-            </div>
-            <!-- //Project Tab Content  -->
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="item">
-            <!-- Project Tab Content  -->
-            <div class="module-content-wrapper moduletask">
-              <!-- module-content-header -->
-              <div class="module-content-header bg-header_3">
-                <a href="javascript:void(0);" class="bullet"><span></span></a>
-                <ul class="dropdwn-task">     
-                    <li><a href="javascript:void(0);">Attach Files</a></li>
-                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
-                    <li><a href="javascript:void(0);">Send to Email</a></li>
-                    <li><a href="javascript:void(0);">Print PDF</a></li>
-                    <li><a href="javascript:void(0);">Share Task</a></li>
-                    <li><a href="javascript:void(0);">View / Edit Details</a></li>
-                    <li><a href="javascript:void(0);">Delete</a></li>
-                </ul>
-                <img src="../../../../assets/images/notes-pin.png">
-              </div>
-              <!-- module-content-header -->
-              <!-- module-content-body -->
-              <div class="module-content-body bg-gradient_3">
-                <ul>
-                  <li>
-                    <div class="md-status-info">
-                      <div class="md-info-img">
-                        <img src="../../../../assets/images/notes-img.png">
+                    <!-- //Project Tab Content  -->
+                  </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="item">
+                    <!-- Project Tab Content  -->
+                    <div class="module-content-wrapper moduletask">
+                      <!-- module-content-header -->
+                      <div class="module-content-header bg-header_3">
+                        <a href="javascript:void(0);" class="bullet"><span></span></a>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+                        <img src="../../../../assets/images/notes-pin.png">
                       </div>
-                      <h5>Appinventiv Pramod</h5>
+                      <!-- module-content-header -->
+                      <!-- module-content-body -->
+                      <div class="module-content-body bg-gradient_3">
+                        <ul>
+                          <li>
+                            <div class="md-status-info">
+                              <div class="md-info-img">
+                                <img src="../../../../assets/images/notes-img.png">
+                              </div>
+                              <h5>Appinventiv Pramod</h5>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="status status-bar-with-active">
+                              <span class="bar-line">
+                                <label class="pull-right">60%</label>
+                                <div class="progress active m-xxxs">
+                                  <div class="bar" style="width: 50%;"></div>                                                   
+                                </div>
+                              </span>
+                              <span class="bar-status"> 
+                                <p>| Status : Active</p>
+                              </span>
+                            </div>
+                          </li>
+                          <li><p>Project Name: <span>Test Project 100</span></p></li>
+                          <li><p>ODB Project Number: <span>1006</span></p></li>
+                          <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
+                          <li><p>Reason for Request: <span>Insufficient</span></p></li>
+                          <li><p>To: <span>Appinventiv Pramod</span></p></li>
+                          <li><p>Status: <span>On Going</span></p></li>
+                          <li><p>Due Date : <span>2017-06-15</span></p></li>
+                          <li>
+                            <p>Watching Users:</p>
+                            <div class="p-t-xs module-watching-user">
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- module-content-body -->
                     </div>
-                    <div class="clear"></div>
-                    <div class="status status-bar-with-active">
-                      <span class="bar-line">
-                        <label class="pull-right">60%</label>
-                        <div class="progress active m-xxxs">
-                          <div class="bar" style="width: 50%;"></div>                                                   
-                        </div>
-                      </span>
-                      <span class="bar-status"> 
-                        <p>| Status : Active</p>
-                      </span>
+                    <!-- //Project Tab Content  -->
+                  </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="item">
+                    <!-- Project Tab Content  -->
+                    <div class="module-content-wrapper moduletask">
+                      <!-- module-content-header -->
+                      <div class="module-content-header bg-header_1">
+                        <a href="javascript:void(0);" class="bullet"><span></span></a>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+        
+                        <img src="../../../../assets/images/notes-pin.png">
+                      </div>
+                      <!-- module-content-header -->
+                      <!-- module-content-body -->
+                      <div class="module-content-body bg-gradient_1">
+                        <ul>
+                          <li>
+                            <div class="md-status-info">
+                              <div class="md-info-img">
+                                <img src="../../../../assets/images/notes-img.png">
+                              </div>
+                              <h5>Appinventiv Pramod</h5>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="status status-bar-with-active">
+                              <span class="bar-line">
+                                <label class="pull-right">60%</label>
+                                <div class="progress active m-xxxs">
+                                  <div class="bar" style="width: 50%;"></div>                                                   
+                                </div>
+                              </span>
+                              <span class="bar-status"> 
+                                <p>| Status : Active</p>
+                              </span>
+                            </div>
+                          </li>
+                          <li><p>Project Name: <span>Test Project 100</span></p></li>
+                          <li><p>ODB Project Number: <span>1006</span></p></li>
+                          <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
+                          <li><p>Reason for Request: <span>Insufficient</span></p></li>
+                          <li><p>To: <span>Appinventiv Pramod</span></p></li>
+                          <li><p>Status: <span>On Going</span></p></li>
+                          <li><p>Due Date : <span>2017-06-15</span></p></li>
+                          <li>
+                            <p>Watching Users:</p>
+                            <div class="p-t-xs module-watching-user">
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- module-content-body -->
                     </div>
-                  </li>
-                  <li><p>Project Name: <span>Test Project 100</span></p></li>
-                  <li><p>ODB Project Number: <span>1006</span></p></li>
-                  <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
-                  <li><p>Reason for Request: <span>Insufficient</span></p></li>
-                  <li><p>To: <span>Appinventiv Pramod</span></p></li>
-                  <li><p>Status: <span>On Going</span></p></li>
-                  <li><p>Due Date : <span>2017-06-15</span></p></li>
-                  <li>
-                    <p>Watching Users:</p>
-                    <div class="p-t-xs module-watching-user">
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
-                      <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
+                    <!-- //Project Tab Content  -->
+                  </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="item">
+                    <!-- Project Tab Content  -->
+                    <div class="module-content-wrapper moduletask">
+                      <!-- module-content-header -->
+                      <div class="module-content-header bg-header_1">
+                        <a href="javascript:void(0);" class="bullet"><span></span></a>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+        
+                        <img src="../../../../assets/images/notes-pin.png">
+                      </div>
+                      <!-- module-content-header -->
+                      <!-- module-content-body -->
+                      <div class="module-content-body bg-gradient_1">
+                        <ul>
+                          <li>
+                            <div class="md-status-info">
+                              <div class="md-info-img">
+                                <img src="../../../../assets/images/notes-img.png">
+                              </div>
+                              <h5>Appinventiv Pramod</h5>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="status status-bar-with-active">
+                              <span class="bar-line">
+                                <label class="pull-right">60%</label>
+                                <div class="progress active m-xxxs">
+                                  <div class="bar" style="width: 50%;"></div>                                                   
+                                </div>
+                              </span>
+                              <span class="bar-status"> 
+                                <p>| Status : Active</p>
+                              </span>
+                            </div>
+                          </li>
+                          <li><p>Project Name: <span>Test Project 100</span></p></li>
+                          <li><p>ODB Project Number: <span>1006</span></p></li>
+                          <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
+                          <li><p>Reason for Request: <span>Insufficient</span></p></li>
+                          <li><p>To: <span>Appinventiv Pramod</span></p></li>
+                          <li><p>Status: <span>On Going</span></p></li>
+                          <li><p>Due Date : <span>2017-06-15</span></p></li>
+                          <li>
+                            <p>Watching Users:</p>
+                            <div class="p-t-xs module-watching-user">
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- module-content-body -->
                     </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- module-content-body -->
-            </div>
-            <!-- //Project Tab Content  -->
-          </div>
-        </ng-template>
+                    <!-- //Project Tab Content  -->
+                  </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="item">
+                    <!-- Project Tab Content  -->
+                    <div class="module-content-wrapper moduletask">
+                      <!-- module-content-header -->
+                      <div class="module-content-header bg-header_1">
+                        <a href="javascript:void(0);" class="bullet"><span></span></a>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+                        <ul class="dropdwn-task">     
+                            <li><a href="javascript:void(0);">Attach Files</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#email-reminder">Add Reminder</a></li>
+                            <li><a href="javascript:void(0);">Send to Email</a></li>
+                            <li><a href="javascript:void(0);">Print PDF</a></li>
+                            <li><a href="javascript:void(0);">Share Task</a></li>
+                            <li><a href="javascript:void(0);">View / Edit Details</a></li>
+                            <li><a href="javascript:void(0);">Delete</a></li>
+                        </ul>
+        
+                        <img src="../../../../assets/images/notes-pin.png">
+                      </div>
+                      <!-- module-content-header -->
+                      <!-- module-content-body -->
+                      <div class="module-content-body bg-gradient_1">
+                        <ul>
+                          <li>
+                            <div class="md-status-info">
+                              <div class="md-info-img">
+                                <img src="../../../../assets/images/notes-img.png">
+                              </div>
+                              <h5>Appinventiv Pramod</h5>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="status status-bar-with-active">
+                              <span class="bar-line">
+                                <label class="pull-right">60%</label>
+                                <div class="progress active m-xxxs">
+                                  <div class="bar" style="width: 50%;"></div>                                                   
+                                </div>
+                              </span>
+                              <span class="bar-status"> 
+                                <p>| Status : Active</p>
+                              </span>
+                            </div>
+                          </li>
+                          <li><p>Project Name: <span>Test Project 100</span></p></li>
+                          <li><p>ODB Project Number: <span>1006</span></p></li>
+                          <li><p>Ref #: <span>Lorem Ipsum</span></p></li>
+                          <li><p>Reason for Request: <span>Insufficient</span></p></li>
+                          <li><p>To: <span>Appinventiv Pramod</span></p></li>
+                          <li><p>Status: <span>On Going</span></p></li>
+                          <li><p>Due Date : <span>2017-06-15</span></p></li>
+                          <li>
+                            <p>Watching Users:</p>
+                            <div class="p-t-xs module-watching-user">
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);"><img src="../../../../assets/images/user-img.png" class="centered-image" alt=""></a>
+                              <a href="javascript:void(0);" class="count-users"><span class="n centered">+02</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- module-content-body -->
+                    </div>
+                    <!-- //Project Tab Content  -->
+                  </div>
+            </ng-template>
         </owl-carousel-o>
-        <!-- </div> -->
-        <!-- <div class="owl-navigation">
+        </div>
+            
+       
+        <div class="owl-navigation">
           <a href="javascript:void[0]" class="owl-prev"><img src="../../../../assets/images/left-circle-arrow.png"></a>
           <a href="javascript:void[0]" class="owl-next"><img src="../../../../assets/images/right-circle-arrow.png"></a>
-        </div> -->
+        </div>
 
       </div>
     </div>
