@@ -1,0 +1,15 @@
+D:\OAuthProvider\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.deps.json
+D:\OAuthProvider\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.dll
+D:\OAuthProvider\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.pdb
+D:\OAuthProvider\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfoInputs.cache
+D:\OAuthProvider\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfo.cs
+D:\OAuthProvider\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.dll
+D:\OAuthProvider\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.pdb
+D:\PMS\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.deps.json
+D:\PMS\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.dll
+D:\PMS\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.pdb
+D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfoInputs.cache
+D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfo.cs
+D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.dll
+D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.pdb
+D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.csprojAssemblyReference.cache

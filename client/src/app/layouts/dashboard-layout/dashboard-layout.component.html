@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clear Drive</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body class="">
+<div class="wrapnav-sm"></div>
+<div class="wrapchat-sm"></div>
+<div class="wrapMail-lg"></div>
+<div class="bodybackground-chat"></div>
+<div class="wrapplus-menu-lg"></div>
+<div class="wraper-dashboard">
+
+  <div class="sideNav" id="sideNav">
+    <div class="sidenav-inner">
+      <nav class="rnavbar-left full-height-scrollbar">
+        <ul>
+          <li class="user-mobile"> <a href="javascript:void(0);"> <span class="user"><img src="../../../assets/images/user-img.png" alt="" /></span>
+            <p>Jason Redford</p>
+            <span>Sr. Vice President</span> </a>
+            <div class="showonly-mobile"><a href="" class="edit">Edit Profile</a></div>
+          </li>
+          <li class="dashboard-nav active"><a [routerLink]="['dashboard']"> <span class="nav-ico"><img src="../../../assets/images/dashboard_1.png" alt="" /></span> <span class="nav-txt">Dashboard</span> </a> </li>
+          <li class="projects-nav"><a [routerLink]="['project']"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_2.png" alt="" /></span> <span class="nav-txt">Projects</span> </a> </li>
+          <li class="tasks-nav"><a [routerLink]="['task']"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_3.png" alt="" /></span> <span class="nav-txt">Tasks</span> </a> </li>
+          <li class="company-files-nav"><a [routerLink]="['rfi']"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_4.png" alt="" /></span> <span class="nav-txt">Company Files</span> </a> </li>
+          <li class="rfis-nav"><a [routerLink]="['rfi']"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_5.png" alt="" /></span><span class="nav-txt">RFIs</span> </a> </li>
+          <li class="members-nav"><a [routerLink]="['member']"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_6.png" alt="" /></span><span class="nav-txt">Members</span> </a> </li>
+          <li class="showonly-mobile"><a href="javascript:void(0);"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_6.png" alt="" /></span><span class="nav-txt">Account Settings</span> </a> </li>
+          <li class="showonly-mobile"><a href="javascript:void(0);"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_6.png" alt="" /></span><span class="nav-txt">Help</span> </a> </li>
+          <li class="showonly-mobile"><a href="javascript:void(0);"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_6.png" alt="" /></span><span class="nav-txt">Terms & Conditions</span> </a> </li>
+          <li class="showonly-mobile"><a href="javascript:void(0);"> <span class="nav-ico"><img src="../../../assets/images/Dashboard_6.png" alt="" /></span><span class="nav-txt upparcase">Logout</span> </a> </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--sidebar end--> 
+  <div class="sideNav-Right" id="sideNav-Right">
+    <div class="sideNav-Right-inner">
+      <nav class="right-sidenav">
+        <div class="msg-alert" id="OpenChat">ONGOING Messages <span class="badge badge-msg">03</span> </div>
+        <ul class="full-height-scrollbar">
+          <li class="online" id="openchatbox"> <a href="javascript:void(0);">
+            <figure> <img src="../../../assets/images/user-img.png" alt="" /> </figure>
+            <div class="user">
+              <p class="name">Matt Thompson </p>
+              <p class="msg">Thanks again for the</p>
+              <span class="time">5m</span> </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <figure> <img src="../../../assets/images/user-img.png" alt="" /> </figure>
+            <div class="user">
+              <p class="name">Shaun Gardner</p>
+              <p class="msg">OK. Sounds Perfect! </p>
+              <span class="time">8m</span> </div>
+            </a> </li>
+          <li class="active"> <a href="javascript:void(0);">
+            <figure> <img src="../../../assets/images/user-img.png" alt="" /> </figure>
+            <div class="user">
+              <p class="name">Kristen McKeller</p>
+              <p class="msg">When are we complete </p>
+              <span class="time">2h</span> </div>
+            </a> </li>
+          <li class=""> <a href="javascript:void(0);">
+            <figure> <img src="../../../assets/images/user-img.png" alt="" /> </figure>
+            <div class="user">
+              <p class="name">Bruce West</p>
+              <p class="notread-msg"><span class="dots"></span><span class="dots"></span><span class="dots"></span></p>
+              <p class="msg">OK. Wil do.</p>
+              <span class="time">1d</span> </div>
+            </a> </li>
+          <li> <a href="javascript:void(0);">
+            <figure> <img src="../../../assets/images/user-img.png" alt="" /> </figure>
+            <div class="user">
+              <p class="name">Susan Barns</p>
+              <p class="notread-msg"><span class="dots"></span><span class="dots"></span><span class="dots"></span></p>
+              <p class="msg">Amazing! </p>
+              <span class="time">12 Dec</span> </div>
+            </a> </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--header start-->
+  <header class="main-header">
+    <nav class="logo-header">
+      <div class="logo-wrap"> <a class="nav-toggle" id="nav-toggle" href="javascript:void(0);"><span></span></a> <a href="javascript:void(0);"><img src="../../../assets/images/logo-md.png" alt="logo" /></a> </div>
+      <ul class="social">
+        <li class="search"> <a href="javascript:void(0);"> <span class="icon"><button type="submit" id="search-clickid"><img src="../../../assets/images/search.png" alt="" /></button></span> </a> 
+          <!--<div class="append-form"></div>-->
+          <form action="" class="dash-search">
+            <input type="search" placeholder="Search Projects, members, Tasks/RFLs or Files">
+          </form>
+        </li>
+        <li id="plus-menuclick" class="nav-tab"> <a href="javascript:void(0);"> <span class="icon"><img src="../../../assets/images/add-icon.png" alt="" /></span> </a>
+          <ul class="plus-menu headernav-toggle headernav_fortabs">
+            <li><a href="javascript:void(0);">Add Project</a></li>
+            <li><a href="javascript:void(0);">Add Tasks</a></li>
+            <li><a href="javascript:void(0);">Add RFLs</a></li>
+          </ul>
+        </li>
+        <li class="nav-tab"> 
+        	<a href="javascript:void(0);">
+            	<span class="icon"><img src="../../../assets/images/notification.png" alt="" /></span><span class="badge badge-notify">02</span>
+            </a>           
+            <div class="notification-toggle headernav-toggle headernav_fortabs">			
+				<div class="notification-toggle-inner">
+					<div class="nt-heading">Recent Notifications <strong>(02)</strong></div>                    
+					<ul class="full-height-scrollbar-messege">
+						<li><div class="notification-bullet">
+								<figure><img src="../../../assets/images/user-img.png" alt=""></figure>
+								<div class="message">
+									<p><strong>Janet Wilson</strong> added a new file to the project - <span><strong>1058 Beer Parkway.</strong></span></p>
+									<span class="time">Just Now</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="notification-bullet">
+								<figure><img src="../../../assets/images/user-img.png" alt=""></figure>
+								<div class="message">
+									<p><strong>Martha Stuart</strong> added you as a watching member for a new task.</p>
+									<div class=""><a href="javascript:valid(0);" class="Communication">View Communication</a><a href="javascript:valid(0);" class="outcome">View Outcome</a></div>                            
+									<span class="time">2h ago</span>
+								</div>
+							</div>
+						</li>
+						<li class="post-msg">
+							<div class="notification-bullet">
+								<figure><img src="../../../assets/images/user-img.png" alt=""></figure>
+								<div class="message">
+									<p><strong>Janet Wilson</strong> added a new file to the project - <span><strong>1058 Beer Parkway.</strong></span></p>
+									<span class="time">2 Dec</span>
+								</div>
+							</div>
+						</li>						
+					</ul> 
+					<div class="nt-footer"><a href="javascript:valid(0);">View All Notifications </a></div>                    
+				</div>	
+			</div>
+                            
+        </li>        
+        <li class="comment nav-tab hide-in-mobile"> 
+			<a href="javascript:void(0);"> 
+				<span class="user user-desktop" id="user-desktop"><img src="../../../assets/images/user-img.png" alt="" /></span>
+			</a>
+          <ul class="comment-onclick headernav-toggle headernav_fortabs" id="comment-onclick">
+            <li>
+              <figure><img src="../../../assets/images/user-img.png" alt="" /></figure>
+              <div class="detail">
+                <p>John Simons</p>
+                <p><span>Project Manager</span></p>
+                <a href="" class="edit">Edit Profile</a> </div>
+            </li>
+            <li><a href="">Account Settings</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li class="button100">
+              <button type="submit" class="btn-dash">logout</button>
+            </li>
+          </ul>
+        </li>
+        <li id="comment" class="comment hide-in-desktop"> <a href="javascript:void(0);"> <span class="hide-in"><img src="../../../assets/images/chat.png" alt="" /></span> </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <!--header end-->
+  <router-outlet></router-outlet>
+
+  <footer class="footer padding-dashboard">
+    <figure><img src="../../../assets/images/Dashboard_8.png" alt="" /></figure>
+    <p>© 2016 Cleardrive Inc. All Rights Reserved. |  Terms of Use</p>
+  </footer>
+  
+  <!------------ chat box---------------->
+  
+  <div class="chatbox-position" id="Chatmsg-box">
+      <div class="chatbox">
+            <div class="chatheader" id="chatheader">
+            	<div class="main">
+                	<h1>Kristen McKeller</h1>
+                	<a href="javascript:void(0);" id="Cross-chatbtn"><img src="../../../assets/images/cross.png" alt="" /></a>
+                </div>
+                <div class="submain">
+                	<h2>145 Eagles Walk</h2>
+                    <div class="btn-section">
+                        <ul>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target=".Createnew-modal"><img src="../../../assets/images/chat-pushpin.png" alt="" /></a></li>
+                            <li><a href="javascript:void(0);"><img src="../../../assets/images/chat-trash.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+            <div class="mid-section" id="chat-section">
+                <div class="midcenter full-height-chat">
+                    <div class="chat-msg">
+                        <figure>
+                        	<img src="../../../assets/images/user-img.png" alt="" />
+                        </figure>
+                        <div class="data">
+                            <h3>Kristen McKeller:</h3>
+                            <span class="time">2h</span>
+                            <p>When are we completing work on blueprint documents?</p>
+                        </div>
+                    </div>
+                     <div class="chat-msg">
+                        <figure>
+                        	<img src="../../../assets/images/user-img.png" alt="" />
+                        </figure>
+                        <div class="data">
+                            <h3>Me:</h3>
+                            <span class="time">Just Now</span>
+                            <p>When are we completing work on blueprint documents?</p>
+                         </div>
+                    </div>
+                    <div class="chat-msg">
+                        <figure>
+                        	<img src="../../../assets/images/user-img.png" alt="" />
+                        </figure>
+                        <div class="data">
+                            <h3>Me:</h3>
+                            <span class="time">Just Now</span>
+                            <p>When are we completing work on blueprint documents?</p>
+                         </div>
+                    </div>
+                    <div class="chat-msg">
+                        <figure>
+                        	<img src="../../../assets/images/user-img.png" alt="" />
+                        </figure>
+                        <div class="data">
+                            <h3>Me:</h3>
+                            <span class="time">Just Now</span>
+                            <p>When are we completing work on blueprint documents?</p>
+                         </div>
+                    </div>                    
+                </div>
+                <div class="aside-col">
+                	<div class="aside-ul full-height-chat">
+                    	<ul class="">
+                            <li class="active"><a href="javascript:void(0);" class="circle"><span>1.</span></a></li>
+                            <li><a href="javascript:void(0);" class="circle"><span>2.</span></a></li>                        
+                            <li><a href="javascript:void(0);" class="circle"><span>3.</span></a></li>                                               
+                            <li><a href="javascript:void(0);" class="circle"><span>3.</span></a></li> 
+                        </ul>                                             
+             		</div>
+                     <div class="add"><a href="javascript:void(0);" class="circle" data-toggle="modal" data-target=".addnew-chat-modal"><span><img src="../../../assets/images/chat-add.png" alt="" /></span></a></div> 
+                </div>                            
+           </div>           
+            <div class="chatfooter">
+            	<textarea id="" placeholder="Write a comment..." name="message"></textarea>
+                <a href="javascript:void(0);"><img src="../../../assets/images/send.png" alt="" /></a>
+            </div>
+      </div>
+  </div>
+  
+  <div class="modal fade addnew-chat-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg chat-modelpopup">
+        <div class="modal-content">
+        	<div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                
+                    <div class="header">                     
+                    	<h1>Create New Chat</h1>
+                    </div>
+                    <div class="content">
+                   		<p>Please enter name for your new chat discussion with Kristen Mc Keller</p>
+                        <input type="text" value="" name="" class="form-control"/>
+                    </div>
+                    <div class="clear"></div>               
+                    <div class="footer">                       
+                        <button type="submit" class="btn-dash btn-profile btn-edit-profile-add">Save</button>
+                        <button type="submit" class="btn-dash btn-profile btn-edit-profile-close" data-dismiss="modal">Close</button>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+     <div class="modal fade Createnew-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg createnew-model">
+        <div class="modal-content">
+        	<div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                
+                    <div class="header">                     
+                    	<h1><img src="../../../assets/images/create-pushpin.png" alt="" />Create New Discussion</h1>
+                    </div> 
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 p-xxxs">
+                    	<div class="content left">
+                        	<h2><a href="javascript:void(0);">Add Members</a></h2>
+                            <div class="full-height-newchat full-height-checkbox">
+                                <div class="check">                            	
+                                  <input id="checkbox" class="checkbox-input" type="checkbox" value="" checked />
+                                  <label for="checkbox" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-1" class="checkbox-input" type="checkbox" value="" checked />
+                                  <label for="checkbox-1" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-2" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox-2" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-3" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox-3" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox-4" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-5" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox-5" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-6" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox-6" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox-7" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox-7" class="checkbox-label"><figure><img src="../../../assets/images/user-img.png" alt="" /></figure><span>Kristen McKeller</span></label>						
+                                </div>
+                             </div>                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-xxxs">
+                    	<div class="content right">
+                        	<div class="inner">
+                                <h2><a href="javascript:void(0);">Add Discussion Title</a></h2>
+                                <ul>
+                                    <li><figure><img src="../../../assets/images/user-img.png" alt="" /></figure> </li>
+                                    <li><figure><img src="../../../assets/images/user-img.png" alt="" /></figure></li>
+                                    <li><figure><img src="../../../assets/images/user-img.png" alt="" /></figure></li>
+                                </ul>
+                            </div>
+                            <div class="circle-check full-height-newchat full-height-circlechatbox">
+                            	<div class="check">                            	
+                                  <input id="checkbox11" class="checkbox-input" type="checkbox" value="" checked />
+                                  <label for="checkbox11" class="checkbox-label circle-label"><span>Get blueprint layouts approved from Jason.</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox2" class="checkbox-input" type="checkbox" value="" checked />
+                                  <label for="checkbox2" class="checkbox-label circle-label"><span>Get blueprint layouts approved from Jason.</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox3" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox3" class="checkbox-label circle-label"><span>Get blueprint layouts approved from Jason.</span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                                <div class="check">                            	
+                                  <input id="checkbox4" class="checkbox-input" type="checkbox" value="" />
+                                  <label for="checkbox4" class="checkbox-label circle-label"><span></span></label>						
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="numbering-chat">
+                    	<div class="content number">
+                        	<div class="inner">                            	
+                                <ul class="bullet">
+                                    <li class="active"><a href="javascript:void(0);" class="circlenew"><span>1.</span></a></li>
+                                    <li><a href="javascript:void(0);" class="circlenew"><span>2.</span></a></li>                        
+                                    <li><a href="javascript:void(0);" class="circlenew"><span>3.</span></a></li>                                               
+                                    <li><a href="javascript:void(0);" class="circlenew"><span>4.</span></a></li> 
+                                </ul>
+                                <div class="addnew bullet"><a href="javascript:void(0);"><span><img src="../../../assets/images/add-black.png" alt=""></span></a></div>
+                        	</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>               
+                    <div class="createnewfooter">                       
+                        <button type="submit" class="btn-dash btn-profile btn-edit-profile-add">Save</button>
+                        <button type="submit" class="btn-dash btn-profile btn-edit-profile-close" data-dismiss="modal">Close</button>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+   
+  
+  
+</div>
+</body>
+</html>
