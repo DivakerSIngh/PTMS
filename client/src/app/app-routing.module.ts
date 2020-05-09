@@ -1,37 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
-import { HomeComponent } from './layouts/home-layout/home/home.component';
-import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
+import { HomeComponent } from './home-module/home/home.component';
+import { HomeLayoutComponent } from './home-module/home-layout.component';
+import { AccountLayoutComponent } from './account-module/account-layout.component';
 
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'index',
-    pathMatch: 'full',
-  }, 
-  {
-    path: 'index',
-    component: HomeLayoutComponent,
-    pathMatch: 'full',
-    children: [{
-      path:'',
-      component:HomeComponent
-      //loadChildren: () => import('./layouts/home-layout/home-layout.module').then(m => m.HomelayoutModule)
-    }]
+    path:'',redirectTo:'elearn',pathMatch:'full'
   },
   {
-    path: 'home',
-    component: DashboardLayoutComponent,
+    path: 'elearn',
+    component: HomeLayoutComponent,
     children: [
       {
       path:'',
-      loadChildren: () => import('./layouts/dashboard-layout/dashboard-layout.module').then(m => m.DashboardLayoutModule)
+      loadChildren: () => import('./home-module/home.module').then(m => m.HomeModule)
     }
   ]
   }
-
+  
 ];
 
 @NgModule({

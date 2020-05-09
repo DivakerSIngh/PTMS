@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PMS\\PMS.Framwork\\PMS.Framework.csproj": {}
+    "D:\\ProjectTeamManagement\\service\\PMS.Framwork\\PMS.Framework.csproj": {}
   },
   "projects": {
-    "D:\\PMS\\PMS.Framwork\\PMS.Framework.csproj": {
+    "D:\\ProjectTeamManagement\\service\\PMS.Framwork\\PMS.Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PMS\\PMS.Framwork\\PMS.Framework.csproj",
+        "projectUniqueName": "D:\\ProjectTeamManagement\\service\\PMS.Framwork\\PMS.Framework.csproj",
         "projectName": "PMS.Framework",
-        "projectPath": "D:\\PMS\\PMS.Framwork\\PMS.Framework.csproj",
+        "projectPath": "D:\\ProjectTeamManagement\\service\\PMS.Framwork\\PMS.Framework.csproj",
         "packagesPath": "C:\\Users\\Divaker\\.nuget\\packages\\",
-        "outputPath": "D:\\PMS\\PMS.Framwork\\obj\\",
+        "outputPath": "D:\\ProjectTeamManagement\\service\\PMS.Framwork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "css"
+          "style": "scss"
         }
       },
       "root": "",
@@ -28,19 +28,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-              "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
-
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/assets/css/bootstrap-theme.min.css",
-              "src/assets/css/font-awesome.min.css",
-              "src/assets/css/layout.css",
-              "src/assets/css/inner-layout.css",
-              "src/assets/css/media.css"
+              "src/styles.scss",              
+              "src/assets/css/library/bootstrap.min.css",
+              "src/assets/css/library/font-awesome.min.css",
+              "src/assets/css/library/owl.carousel.css",
+              "src/assets/css/md-font.css",
+              "src/assets/css/style.css"
             ],
             "scripts": [
-              
+              "src/assets/js/library/jquery-1.11.0.min.js",
+              "src/assets/js/library/jquery.owl.carousel.js"
             ]
           },
           "configurations": {
@@ -134,12 +131,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "client",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+    }},
+  "defaultProject": "client"
 }

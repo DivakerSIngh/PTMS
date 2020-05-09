@@ -69,6 +69,10 @@
     <Compile Include="AccountProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PMS.Framwork\PMS.Framework.csproj">
+      <Project>{AD705EDF-92D3-44F6-8FCA-09D5D7514932}</Project>
+      <Name>PMS.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PMS.IProvider\PMS.IProvider.csproj">
       <Project>{9F7B45A9-D7BE-4636-8AE0-647C70DEED72}</Project>
       <Name>PMS.IProvider</Name>

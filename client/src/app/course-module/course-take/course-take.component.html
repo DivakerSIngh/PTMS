@@ -1,0 +1,275 @@
+<section id="featured-request-teacher" class="featured-request-teacher section background-grey">
+    <div class="awe-parallax bg-featured-request-teacher"></div>
+    <div class="awe-overlay overlay-color-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="summary">
+                    <h2>Your Rate Summary</h2>
+                    <hr>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                               <p> Course Actual Rate :  </p>
+                            </div>
+                                <div class="col-sm-6"> 
+                                    <i class="fa fa-inr"></i>  <b> 500 INR /-</b>
+                                     </div>
+                           
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>  Your Rate : </p> 
+                            </div>
+                                <div class="col-sm-6"> 
+                                    <i class="fa fa-inr"></i>   <b> 350 INR /-</b>
+                                     </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>  Bargain Accepted Rate : </p> 
+                            </div>
+                                <div class="col-sm-6"> 
+                                    <i class="fa fa-inr"></i>    <b> 370 INR /-</b>
+                                     </div>
+                           
+                        </div>
+                        <hr>
+                        <p>Your Total amount to be paid : <i class="fa fa-inr"></i><b> 370 INR /-</b></p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <input type="button" [routerLink]="['/elearn/course/bookingconfirmation']" value="Decline" class="mc-btn btn-style-1"> 
+                            </div>
+                                <div class="col-sm-4"> 
+                                    <input type="button" [routerLink]="['/elearn/course/bookingconfirmation']" value="Accept & Payment" class="mc-btn btn-style-1">
+                                     </div>
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="request-featured">
+                    <h1 class="big">Your Bargain status is in Simple three steps</h1>
+                    <div class="create-course-info-wrap">
+                        <div class="row" *ngIf="frmModeType=='n'">
+                            <div class="col-md-4">
+                                <div class="create-course-info status-done">
+                                    <span class="count">1</span>
+                                    <p>Your Quote Successfull</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="create-course-info  status-pending">
+                                    <span class="count status-pending">2</span>
+                                    <p>Quote Pending from author</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="create-course-info  status-pending">
+                                    <span class="count">3</span>
+                                    <p>Finished checkout</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="frmModeType=='b'">
+                            <div class="col-md-4">
+                                <div class="create-course-info">
+                                    <span class="count">1</span>
+                                    <p>Register your self</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="create-course-info">
+                                    <span class="count">2</span>
+                                    <p>Checkout and payment</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="create-course-info">
+                                    <span class="count">3</span>
+                                    <p>Finished checkout</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="course-concern" class="course-concern">
+    <div class="container">
+        <h3 class="md black">Courses you may concern</h3>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <!-- MC ITEM -->
+                <div class="mc-item mc-item-2">
+                    <div class="image-heading">
+                        <img src="assets/images/feature/img-1.jpg" alt="">
+                    </div>
+                    <div class="meta-categories"><a href="#">Web design</a></div>
+                    <div class="content-item">
+                        <div class="image-author">
+                            <img src="assets/images/avatar-1.jpg" alt="">
+                        </div>
+                        <h4><a href="course-intro.html">The Complete Digital Photography Course Amazon Top Seller</a></h4>
+                        <div class="name-author">
+                            By <a href="#">Name of Mr or Mrs</a>
+                        </div>
+                    </div>
+                    <div class="ft-item">
+                        <div class="rating">
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="view-info">
+                            <i class="icon md-users"></i>
+                            2568
+                        </div>
+                        <div class="comment-info">
+                            <i class="icon md-comment"></i>
+                            25
+                        </div>
+                        <div class="price">
+                            $190
+                            <span class="price-old">$134</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END / MC ITEM -->
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <!-- MC ITEM -->
+                <div class="mc-item mc-item-2">
+                    <div class="image-heading">
+                        <img src="assets/images/feature/img-1.jpg" alt="">
+                    </div>
+                    <div class="meta-categories"><a href="#">Web design</a></div>
+                    <div class="content-item">
+                        <div class="image-author">
+                            <img src="assets/images/avatar-1.jpg" alt="">
+                        </div>
+                        <h4><a href="course-intro.html">The Complete Digital Photography Course Amazon Top Seller</a></h4>
+                        <div class="name-author">
+                            By <a href="#">Name of Mr or Mrs</a>
+                        </div>
+                    </div>
+                    <div class="ft-item">
+                        <div class="rating">
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="view-info">
+                            <i class="icon md-users"></i>
+                            2568
+                        </div>
+                        <div class="comment-info">
+                            <i class="icon md-comment"></i>
+                            25
+                        </div>
+                        <div class="price">
+                            $190
+                            <span class="price-old">$134</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END / MC ITEM -->
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <!-- MC ITEM -->
+                <div class="mc-item mc-item-2">
+                    <div class="image-heading">
+                        <img src="assets/images/feature/img-1.jpg" alt="">
+                    </div>
+                    <div class="meta-categories"><a href="#">Web design</a></div>
+                    <div class="content-item">
+                        <div class="image-author">
+                            <img src="assets/images/avatar-1.jpg" alt="">
+                        </div>
+                        <h4><a href="course-intro.html">The Complete Digital Photography Course Amazon Top Seller</a></h4>
+                        <div class="name-author">
+                            By <a href="#">Name of Mr or Mrs</a>
+                        </div>
+                    </div>
+                    <div class="ft-item">
+                        <div class="rating">
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="view-info">
+                            <i class="icon md-users"></i>
+                            2568
+                        </div>
+                        <div class="comment-info">
+                            <i class="icon md-comment"></i>
+                            25
+                        </div>
+                        <div class="price">
+                            $190
+                            <span class="price-old">$134</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END / MC ITEM -->
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <!-- MC ITEM -->
+                <div class="mc-item mc-item-2">
+                    <div class="image-heading">
+                        <img src="assets/images/feature/img-1.jpg" alt="">
+                    </div>
+                    <div class="meta-categories"><a href="#">Web design</a></div>
+                    <div class="content-item">
+                        <div class="image-author">
+                            <img src="assets/images/avatar-1.jpg" alt="">
+                        </div>
+                        <h4><a href="course-intro.html">The Complete Digital Photography Course Amazon Top Seller</a></h4>
+                        <div class="name-author">
+                            By <a href="#">Name of Mr or Mrs</a>
+                        </div>
+                    </div>
+                    <div class="ft-item">
+                        <div class="rating">
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#" class="active"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="view-info">
+                            <i class="icon md-users"></i>
+                            2568
+                        </div>
+                        <div class="comment-info">
+                            <i class="icon md-comment"></i>
+                            25
+                        </div>
+                        <div class="price">
+                            $190
+                            <span class="price-old">$134</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END / MC ITEM -->
+            </div>
+        </div>
+    </div>
+</section>

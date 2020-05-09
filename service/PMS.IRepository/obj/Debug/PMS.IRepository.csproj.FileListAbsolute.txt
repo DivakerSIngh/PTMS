@@ -110,3 +110,11 @@ D:\PMS\PMS.IRepository\bin\Debug\PMS.IRepository.pdb
 D:\PMS\PMS.IRepository\bin\Debug\PMS.Models.dll
 D:\PMS\PMS.IRepository\bin\Debug\PMS.Models.pdb
 D:\PMS\PMS.IRepository\obj\Debug\PMS.IRepository.csproj.CopyComplete
+D:\ProjectTeamManagement\service\PMS.IRepository\bin\Debug\PMS.IRepository.dll
+D:\ProjectTeamManagement\service\PMS.IRepository\bin\Debug\PMS.IRepository.pdb
+D:\ProjectTeamManagement\service\PMS.IRepository\bin\Debug\PMS.Models.dll
+D:\ProjectTeamManagement\service\PMS.IRepository\bin\Debug\PMS.Models.pdb
+D:\ProjectTeamManagement\service\PMS.IRepository\obj\Debug\PMS.IRepository.csprojAssemblyReference.cache
+D:\ProjectTeamManagement\service\PMS.IRepository\obj\Debug\PMS.IRepository.csproj.CopyComplete
+D:\ProjectTeamManagement\service\PMS.IRepository\obj\Debug\PMS.IRepository.dll
+D:\ProjectTeamManagement\service\PMS.IRepository\obj\Debug\PMS.IRepository.pdb

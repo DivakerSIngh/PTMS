@@ -2,3 +2,7 @@ D:\PMS\PMS.Models\bin\Debug\PMS.Models.dll
 D:\PMS\PMS.Models\bin\Debug\PMS.Models.pdb
 D:\PMS\PMS.Models\obj\Debug\PMS.Models.dll
 D:\PMS\PMS.Models\obj\Debug\PMS.Models.pdb
+D:\ProjectTeamManagement\service\PMS.Models\bin\Debug\PMS.Models.dll
+D:\ProjectTeamManagement\service\PMS.Models\bin\Debug\PMS.Models.pdb
+D:\ProjectTeamManagement\service\PMS.Models\obj\Debug\PMS.Models.dll
+D:\ProjectTeamManagement\service\PMS.Models\obj\Debug\PMS.Models.pdb

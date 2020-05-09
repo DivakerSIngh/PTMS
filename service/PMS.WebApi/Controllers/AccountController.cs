@@ -11,9 +11,11 @@ namespace PMS.WebApi.Controllers
     public class AccountController : BaseController
     {
         private readonly IAccountProvider _userProvider;
-        public AccountController(IAccountProvider userProvider,  ILogger logger) : base(logger)
+        protected readonly ILogger _ILogger;
+        public AccountController(IAccountProvider userProvider, ILogger Logger) : base()
         {
-            _userProvider = userProvider;
+            _ILogger = Logger;
+               _userProvider = userProvider;
         }
         // GET api/values
         [Route("get")]

@@ -6,9 +6,9 @@ namespace PMS.WebApi.Controllers
     public class BaseController: ApiController
     {
         protected readonly ILogger Logger;
-        public BaseController(ILogger logger)
+        public BaseController()
         {
-            Logger = logger;
+           // Logger = logger;
         }
     }
 }

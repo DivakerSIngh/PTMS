@@ -13,3 +13,11 @@ D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfo.cs
 D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.dll
 D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.pdb
 D:\PMS\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.csprojAssemblyReference.cache
+D:\ProjectTeamManagement\service\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.csprojAssemblyReference.cache
+D:\ProjectTeamManagement\service\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfoInputs.cache
+D:\ProjectTeamManagement\service\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.AssemblyInfo.cs
+D:\ProjectTeamManagement\service\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.dll
+D:\ProjectTeamManagement\service\PMS.Framwork\obj\Debug\netstandard2.0\PMS.Framework.pdb
+D:\ProjectTeamManagement\service\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.deps.json
+D:\ProjectTeamManagement\service\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.dll
+D:\ProjectTeamManagement\service\PMS.Framwork\bin\Debug\netstandard2.0\PMS.Framework.pdb

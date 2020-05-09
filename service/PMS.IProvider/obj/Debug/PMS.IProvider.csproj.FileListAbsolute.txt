@@ -114,3 +114,13 @@ D:\PMS\PMS.IProvider\bin\Debug\PMS.Models.dll
 D:\PMS\PMS.IProvider\bin\Debug\PMS.IRepository.pdb
 D:\PMS\PMS.IProvider\bin\Debug\PMS.Models.pdb
 D:\PMS\PMS.IProvider\obj\Debug\PMS.IProvider.csproj.CopyComplete
+D:\ProjectTeamManagement\service\PMS.IProvider\bin\Debug\PMS.IProvider.dll
+D:\ProjectTeamManagement\service\PMS.IProvider\bin\Debug\PMS.IProvider.pdb
+D:\ProjectTeamManagement\service\PMS.IProvider\bin\Debug\PMS.IRepository.dll
+D:\ProjectTeamManagement\service\PMS.IProvider\bin\Debug\PMS.Models.dll
+D:\ProjectTeamManagement\service\PMS.IProvider\bin\Debug\PMS.IRepository.pdb
+D:\ProjectTeamManagement\service\PMS.IProvider\bin\Debug\PMS.Models.pdb
+D:\ProjectTeamManagement\service\PMS.IProvider\obj\Debug\PMS.IProvider.csprojAssemblyReference.cache
+D:\ProjectTeamManagement\service\PMS.IProvider\obj\Debug\PMS.IProvider.csproj.CopyComplete
+D:\ProjectTeamManagement\service\PMS.IProvider\obj\Debug\PMS.IProvider.dll
+D:\ProjectTeamManagement\service\PMS.IProvider\obj\Debug\PMS.IProvider.pdb

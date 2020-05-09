@@ -4,12 +4,7 @@ using System.Web.Http.Dependencies;
 using System;
 using System.Collections.Generic;
 using PMS.Provider.Resolver;
-using PMS.IRepository;
-using PMS.Repository;
-using PMS.Provider;
-using PMS.IProvider;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity;
+using PMS.Framework;
 
 namespace PMS.WebApi
 {
@@ -20,6 +15,7 @@ namespace PMS.WebApi
 			var container = new UnityContainer();
             container.AddNewExtension<DependencyInjectionExtension>();
             container.RegisterInstance<IUnityContainer>(container);
+          
             GlobalConfiguration.Configuration.DependencyResolver = new UnityResolver(container);
         }
     }
