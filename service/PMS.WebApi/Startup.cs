@@ -5,6 +5,8 @@ using Owin;
 using System;
 using PMS.WebApi.Provider;
 using PMS.Repository;
+using NLog;
+using System.IO;
 
 [assembly: OwinStartup(typeof(PMS.WebApi.Startup))]
 
@@ -14,6 +16,7 @@ namespace PMS.WebApi
     {
         public void ConfigureAuth(IAppBuilder app)
         {
+            LogManager.LoadConfiguration(String.Concat(AppDomain.CurrentDomain.BaseDirectory, "/Nlog.config"));
             app.CreatePerOwinContext(PMSDBContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationRoleManager>(ApplicationRoleManager.Create);

@@ -8,7 +8,8 @@ namespace PMS.IProvider
 {
    public interface IAccountProvider
     {
-        Task<bool> RegisterUser(UserDTO user, string password);
+        Task<IEnumerable<string>> RegisterUser(UserDTO user, string password);
+        IEnumerable<string> UpdateUser(UserDTO userDTO);
         Task<UserDTO> FindAsync(string userName, string password);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using PMS.IProvider;
 using PMS.IRepository;
 using PMS.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PMS.Provider
@@ -13,7 +14,7 @@ namespace PMS.Provider
         {
             _userRepository = userRepository;
         }
-        public Task<bool> RegisterUser(UserDTO user, string password)
+        public Task<IEnumerable<string>> RegisterUser(UserDTO user, string password)
         {
             return _userRepository.RegisterUser(user, password);
         }
@@ -22,5 +23,12 @@ namespace PMS.Provider
         {
             return _userRepository.FindAsync(userName, password);
         }
+
+        public IEnumerable<string> UpdateUser(UserDTO userDTO)
+        {
+            return _userRepository.UpdateUser(userDTO);
+        }
+
+       
     }
 }

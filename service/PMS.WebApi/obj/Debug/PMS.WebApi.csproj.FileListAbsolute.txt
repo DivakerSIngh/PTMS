@@ -544,3 +544,7 @@ D:\ProjectTeamManagement\service\PMS.WebApi\bin\Antlr3.Runtime.pdb
 D:\ProjectTeamManagement\service\PMS.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\ProjectTeamManagement\service\PMS.WebApi\bin\Microsoft.Extensions.Logging.Abstractions.xml
 D:\ProjectTeamManagement\service\PMS.WebApi\obj\Debug\PMS.WebApi.csproj.CopyComplete
+D:\ProjectTeamManagement\service\PMS.WebApi\bin\Microsoft.AspNetCore.Http.dll
+D:\ProjectTeamManagement\service\PMS.WebApi\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\ProjectTeamManagement\service\PMS.WebApi\bin\Microsoft.AspNetCore.Http.xml
+D:\ProjectTeamManagement\service\PMS.WebApi\bin\Microsoft.AspNetCore.WebUtilities.xml

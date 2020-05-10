@@ -22,5 +22,7 @@ namespace PMS.Models
         public int CreatedBy { get; set; }
         public int? UpdatedBy { get; set; }
         public bool IsActive { get; set; }
+
+        public string UserType { get; set; }
     }
 }

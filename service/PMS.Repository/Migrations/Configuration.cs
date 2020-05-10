@@ -1,4 +1,3 @@
-
 namespace PMS.Repository.Migrations
 {
     using Microsoft.AspNet.Identity;
@@ -37,13 +36,14 @@ namespace PMS.Repository.Migrations
             if (roleManager.Roles.Count() == 0)
             {
                 roleManager.Create(new RoleMaster { Name = "SuperAdmin"});
-                roleManager.Create(new RoleMaster { Name = "Admin" });
-                roleManager.Create(new RoleMaster { Name = "Employee"});
+                roleManager.Create(new RoleMaster { Name = "Author"});
+                roleManager.Create(new RoleMaster { Name = "Learner"});
             }
 
 
 
-            manager.AddToRoles(adminUser.Id, new string[] { "SuperAdmin", "Admin" });
+            manager.AddToRoles(adminUser.Id, new string[] { "SuperAdmin", "Author","Learner" });
         }
     }
+    
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.Owin;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security.OAuth;
 using PMS.Repository;
 using System;
@@ -17,15 +18,17 @@ namespace PMS.WebApi.Provider
         {
            var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
             var user = await userManager.FindAsync(context.UserName, context.Password);
-            var userRole=await userManager.GetRolesAsync(user.Id);
-            var role=string.Join(",", userRole);
             if (user!=null)
             {
                 try
                 {
-                    var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+                    var userRole = await userManager.GetRolesAsync(user.Id);
+                    var role = string.Join(",", userRole);
+                  // var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+                    var identity = await userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
                     identity.AddClaim(new Claim("UserName", user.UserName));
-                    identity.AddClaim(new Claim("FirstName", user.FirstName));
+                    identity.AddClaim(new Claim("UserId", user.Id));
+                    //identity.AddClaim(new Claim("FirstName", user?.FirstName));
                     identity.AddClaim(new Claim(ClaimTypes.Role, role));
                     identity.AddClaim(new Claim("LoggedOn", DateTime.Now.ToString()));
                     context.Validated(identity);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PMS.Framework
 {
-    public interface ILogger
+    public interface ILoggerManager
     {
         void Debug(string message);
         void Debug(string message, Exception exception);

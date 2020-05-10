@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using PMS.Provider.Resolver;
 using PMS.Framework;
+using AutoMapper;
 
 namespace PMS.WebApi
 {
@@ -12,7 +13,7 @@ namespace PMS.WebApi
     {
         public static void RegisterComponents()
         {
-			var container = new UnityContainer();
+            var container = new UnityContainer();
             container.AddNewExtension<DependencyInjectionExtension>();
             container.RegisterInstance<IUnityContainer>(container);
           

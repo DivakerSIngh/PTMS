@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBookingRepository.cs" />
+    <Compile Include="ICategoryMasterRepository.cs" />
+    <Compile Include="ICourseRepository.cs" />
+    <Compile Include="INotificationRepository.cs" />
     <Compile Include="IPMSRepository.cs" />
     <Compile Include="IAccountRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
