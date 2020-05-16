@@ -1,0 +1,27 @@
+<section id="create-course-section" class="create-course-section">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="create-course-sidebar">
+                        <ul class="list-bar">
+                            <li style="cursor: pointer;" [routerLink]="['/elearn/course/setup/basic-info']" routerLinkActive="active"><span class="count">1</span>Basic Information</li>
+                            <li style="cursor: pointer;" [routerLink]="['/elearn/course/setup/media']"    routerLinkActive="active"><span class="count">2</span>Upload Media Files</li>
+                            <li style="cursor: pointer;" [routerLink]="['/elearn/course/setup/publish']" routerLinkActive="active"><span class="count">3</span>Publish Course</li>
+                            <li style="cursor: pointer;" [routerLink]="['/elearn/course/setup/slot']"    routerLinkActive="active"><span class="count">3</span>Set Your Availibility</li>
+                        </ul>
+                        <div class="support">
+                            <a href="#"><i class="icon md-camera"></i>See how it work short tutorial</a>
+                            <a href="#"><i class="icon md-flash"></i>Instant Support</a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-9">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

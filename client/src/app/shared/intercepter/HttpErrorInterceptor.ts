@@ -12,6 +12,7 @@ intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<an
 return next.handle(request)
   .pipe(
     catchError( (error: HttpErrorResponse) => { 
+        debugger
        let errMsg = '';
        // Client Side Error
        if (error.error instanceof ErrorEvent) {        

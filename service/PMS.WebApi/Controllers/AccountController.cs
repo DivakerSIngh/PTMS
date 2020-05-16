@@ -24,9 +24,9 @@ namespace PMS.WebApi.Controllers
         [Route("get")]
         [HttpGet]
         [AllowAnonymous]
-        public IHttpActionResult Test(string username,string password)
+        public IHttpActionResult Test()
         {
-            return Ok(new { username, password });
+            return Ok(true);
         }
 
 

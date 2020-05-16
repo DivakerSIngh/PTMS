@@ -16,15 +16,28 @@ namespace PMS.WebApi.Provider
         }
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-           var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
-            var user = await userManager.FindAsync(context.UserName, context.Password);
-            if (user!=null)
+            ApplicationUser user = null;
+
+            var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
+
+            user = await userManager.FindByEmailAsync(context.UserName);
+            //if login with email else default username
+            if (user != null)
+            {
+                user = await userManager.FindAsync(user.UserName, context.Password);
+            }
+            else
+            {
+                user = await userManager.FindAsync(context.UserName, context.Password);
+            }
+
+            if (user != null)
             {
                 try
                 {
                     var userRole = await userManager.GetRolesAsync(user.Id);
                     var role = string.Join(",", userRole);
-                  // var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+                    // var identity = new ClaimsIdentity(context.Options.AuthenticationType);
                     var identity = await userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
                     identity.AddClaim(new Claim("UserName", user.UserName));
                     identity.AddClaim(new Claim("UserId", user.Id));
@@ -35,7 +48,7 @@ namespace PMS.WebApi.Provider
                 }
                 catch (Exception ex)
                 {
-                    context.SetError("server_error",ex.Message);
+                    context.SetError("server_error", ex.Message);
                     context.Rejected();
                     return;
                 }

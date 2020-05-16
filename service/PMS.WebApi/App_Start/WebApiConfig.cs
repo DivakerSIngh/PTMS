@@ -7,6 +7,9 @@ namespace PMS.WebApi
        
         public static void Register(HttpConfiguration config)
         {
+           // EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");  
+           // config.EnableCors(cors);  
+
             config.MapHttpAttributeRoutes();
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

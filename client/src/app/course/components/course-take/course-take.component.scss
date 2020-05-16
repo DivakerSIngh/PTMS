@@ -1,0 +1,21 @@
+.background-grey
+{
+    background-color: #eee;
+}
+.summary{
+    background-color: white;
+    margin-right: 27px;
+    padding: 20px;
+}
+.status-done .count{
+    background: #4CAF50 !important;
+    color: white !important;
+}
+.status-pending .count {
+    background: #ef2d2d26 !important;
+    color: #9f9f9f !important;
+    border: 2px solid #75787a !important;
+}
+.status-pending p {
+    color: #c4c6c4 !important;
+}

@@ -41,9 +41,11 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   exports: [
+   
     A11yModule,
     ClipboardModule,
     CdkStepperModule,

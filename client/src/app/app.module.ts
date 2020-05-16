@@ -6,8 +6,12 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatDialogModule } from '@angular/material/dialog';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HttpErrorInterceptor } from './shared/intercepter/HttpErrorInterceptor';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MaterialModule } from './shared/material/material.module';
 
 
 
@@ -17,12 +21,16 @@ import { HttpErrorInterceptor } from './shared/intercepter/HttpErrorInterceptor'
   ],
   imports: [
     AppRoutingModule,
+    CarouselModule,
     BrowserModule,
-    RouterModule,
-    MatDialogModule,
-    BrowserAnimationsModule
+    RouterModule,    
+    MaterialModule,
+    BrowserAnimationsModule,
+    FormsModule,ReactiveFormsModule,RxReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [{
+  providers: [
+    {
     provide: HTTP_INTERCEPTORS,
     useClass: HttpErrorInterceptor,
     multi: true}
