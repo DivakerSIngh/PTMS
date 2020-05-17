@@ -10,12 +10,13 @@ import { HomeLayoutComponent } from './components/home-layout/home-layout.compon
 import { LoginComponent } from './components/login/login.component';
 import { CategoryComponent } from './components/category/category.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { TestComponent } from './components/test/test.component';
 
 
 
 
 @NgModule({
-  declarations: [HomeLayoutComponent, HomeLayoutComponent, LoginComponent, CategoryComponent, WelcomeComponent],
+  declarations: [HomeLayoutComponent, HomeLayoutComponent, LoginComponent, CategoryComponent, WelcomeComponent, TestComponent],
   imports: [    
     HomeRoutingModule,
     CommonModule,

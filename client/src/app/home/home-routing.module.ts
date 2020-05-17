@@ -5,6 +5,7 @@ import { AccountLayoutComponent } from '../account/components/account-layout/acc
 import { CourseLayoutComponent } from '../course/components/course-layout/course-layout.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { TestComponent } from './components/test/test.component';
 
 
 
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path:'',component: WelcomeComponent,pathMatch:'full'
   },
+  {
+    path:'test',component: TestComponent,pathMatch:'full'
+  },
+
   {
     path:'login',component: LoginComponent,pathMatch:'full'
   }, 

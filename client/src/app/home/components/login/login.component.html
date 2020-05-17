@@ -48,6 +48,7 @@
 <div class="login-form">
     <form  [formGroup]="frmLogin" novalidate (ngSubmit)="login()">
       <h1>Login</h1>
+      {{frmLogin.controls.username['errorMessages'] | json}}
       <div class="form-group">
         <input type="text" autocomplete="Off" formControlName="username" name="mycase"  placeholder="E-mail Address">
        

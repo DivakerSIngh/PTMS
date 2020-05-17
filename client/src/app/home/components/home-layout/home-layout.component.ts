@@ -15,7 +15,7 @@ export class HomeLayoutComponent implements OnInit {
   }
 
   login(){
-    
+    //throw Error("Validation error without auto or default message set!");
       let editItem=null;
       let message='Client added successfully.';
      
@@ -23,7 +23,7 @@ export class HomeLayoutComponent implements OnInit {
       const dialogConfig = new MatDialogConfig();
       dialogConfig.data = { editItem: editItem };
       dialogConfig.disableClose = true;
-      dialogConfig.autoFocus = true;
+      dialogConfig.autoFocus = false;
    
       dialogConfig.minWidth="30vw";
       dialogConfig.minHeight="33vw";

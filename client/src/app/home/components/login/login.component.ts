@@ -22,17 +22,17 @@ export class LoginComponent implements OnInit {
      }
 
   ngOnInit(): void {
-    debugger
+    
     this.appservice.get('user/get',{}).subscribe((x)=>{
-debugger
+alert(x);
     })
   }
   login(){
-    debugger
+    
 
     
   this.appservice.post(apiConfig.login,this.user).subscribe((response)=>{
-debugger
+
 //this.dialogRef.close();
 
   })
